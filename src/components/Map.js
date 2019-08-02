@@ -24,7 +24,7 @@ const MyMapComponent = compose(
       defaultCalculator={(markers)=>{
         var total = 0; 
         for (var i = 0; i < markers.length; i++) { 
-            if (markers[i].label > 0) { 
+            if (parseInt(markers[i].label) && markers[i].label > 0) { 
                 total += parseInt(markers[i].label); 
             } 
         }   
