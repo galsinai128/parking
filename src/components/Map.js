@@ -68,7 +68,6 @@ export default class Map extends React.Component {
     render() {
       return (<div>
                 <MyMapComponent 
-                    isMarkerShown
                     parkings = {this.state.parkings}
                     center={this.state.center}
                     markerClicked ={this.markerClicked}
