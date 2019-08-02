@@ -1,5 +1,5 @@
 import React from 'react';
-import { withScriptjs, withGoogleMap, GoogleMap,Marker,InfoWindow   } from "react-google-maps"
+import { withScriptjs, withGoogleMap, GoogleMap   } from "react-google-maps"
 import { compose, withProps } from "recompose"
 import {getParkings} from '../services/ParkingService'
 import Parking from './Parking'

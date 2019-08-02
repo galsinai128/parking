@@ -1,7 +1,5 @@
 import React from 'react';
-import {  Marker,InfoWindow } from "react-google-maps";
-import InfoBox from "react-google-maps/lib/components/addons/InfoBox";
-import MarkerWithLabel from "react-google-maps/lib/components/addons/MarkerWithLabel";
+import {  Marker } from "react-google-maps";
 
 export default class Parking extends React.Component {
     
