@@ -11,7 +11,7 @@ const MyMapComponent = compose(
   withProps({
     googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyA8tV-qb3xg_SIu-NM4QJpFx1hC299CES8&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `400px` }} />,
+    containerElement: <div style={{ height: `500px` ,width: `500px`, marginTop: '20px' }} />,
     mapElement: <div style={{ height: `100%` }} />,
   }),
   withScriptjs,
@@ -66,7 +66,7 @@ export default class Map extends React.Component {
     }
 
     render() {
-      return (<div>
+      return (<div style={{ display: `flex`, justifyContent: `center` }}>
                 <MyMapComponent 
                     parkings = {this.state.parkings}
                     center={this.state.center}
