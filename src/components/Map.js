@@ -21,7 +21,6 @@ const MyMapComponent = compose(
     defaultZoom={10}
     defaultCenter={props.center}
   ><MarkerClusterer
-      title={'1'}
       defaultCalculator={(markers)=>{
         var total = 0; 
         for (var i = 0; i < markers.length; i++) { 
