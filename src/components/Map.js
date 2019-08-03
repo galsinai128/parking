@@ -21,6 +21,7 @@ const MyMapComponent = compose(
     defaultZoom={10}
     defaultCenter={props.center}
   ><MarkerClusterer
+      maxZoom = {12}
       defaultCalculator={(markers)=>{
         var total = 0; 
         for (var i = 0; i < markers.length; i++) { 
@@ -34,7 +35,6 @@ const MyMapComponent = compose(
         }; 
       }}
   >
-
     {renderMarkers(props)}  
   </MarkerClusterer>
   </GoogleMap>

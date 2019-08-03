@@ -1,6 +1,9 @@
+/*global google*/
 import React from 'react';
 import Geocode from 'react-geocode';
 import {  Marker } from "react-google-maps";
+import icon from '../car.png'
+
 
 export default class Car extends React.Component {
     
@@ -20,7 +23,8 @@ export default class Car extends React.Component {
     return (<div>
                   <Marker
                     position={this.state.position} 
-                    label={`car`}
+                    label={'car'}
+                    icon={{url:icon,scaledSize: new google.maps.Size(30, 30)}}
                   >
                   </Marker>    
                 
